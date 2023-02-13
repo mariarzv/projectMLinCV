@@ -1,0 +1,8 @@
+PIL
+numpy
+tensorflow
+cv2
+glob
+argparse
+yolov5_tflite_inference
+yolov5_tflite_image_inference
