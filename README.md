@@ -19,7 +19,7 @@ Test image inference and video inference
 To install the project, follow these steps:
 
 1. Install the required dependencies by running `pip install -r requirements.txt` in the terminal.
-2. Run `pip install projectMLinCV-0.0.1-py2.py3-none-any.whl` to install the project using the wheel file.
+2. Run `cd dist` and `pip install projectMLinCV-0.0.1-py2.py3-none-any.whl` to install the project using the wheel file.
 
 
 
