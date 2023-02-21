@@ -1,7 +1,7 @@
 PIL
 numpy
 tensorflow
-cv2
+opencv-contrib-python
 glob
 argparse
 yolov5_tflite_inference

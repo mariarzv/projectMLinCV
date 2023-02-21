@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+projectMLinCV.egg-info/PKG-INFO
+projectMLinCV.egg-info/SOURCES.txt
+projectMLinCV.egg-info/dependency_links.txt
+projectMLinCV.egg-info/top_level.txt
