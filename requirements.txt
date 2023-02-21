@@ -1,8 +1,6 @@
-PIL
+pillow
 numpy
 tensorflow
 opencv-contrib-python
-glob
 argparse
-yolov5_tflite_inference
-yolov5_tflite_image_inference
+yolov5
