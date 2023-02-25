@@ -7,14 +7,10 @@ import numpy as np
 from utils import letterbox_image, scale_coords
 
 
-
-def detect_image(weights,image_url,img_size,conf_thres,iou_thres):
-
-
+def detect_image(weights, image_url, img_size, conf_thres, iou_thres):
 
     start_time = time.time()
-    
-    
+
     #image = cv2.imread(image_url)
     image = Image.open(image_url)
     original_size = image.size[:2]
@@ -66,20 +62,18 @@ def detect_image(weights,image_url,img_size,conf_thres,iou_thres):
         print('Total Time Taken:',end_time-start_time)
 
 
-
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('-w','--weights', type=str, default='yolov5s.pt', help='model.pt path(s)')
-    parser.add_argument('-i','--img_path', type=str, required=True, help='image path')  
+    parser.add_argument('-w', '--weights', type=str, default='yolov5s.pt', help='model.pt path(s)')
+    parser.add_argument('-i', '--img_path', type=str, required=True, help='image path')
     parser.add_argument('--img_size', type=int, default=416, help='image size')  
     parser.add_argument('--conf_thres', type=float, default=0.25, help='object confidence threshold')
     parser.add_argument('--iou_thres', type=float, default=0.45, help='IOU threshold for NMS')
 
-    
     opt = parser.parse_args()
     
     print(opt)
-    detect_image(opt.weights,opt.img_path,opt.img_size,opt.conf_thres,opt.iou_thres)
+    detect_image(opt.weights, opt.img_path, opt.img_size, opt.conf_thres, opt.iou_thres)
 
 
     
