@@ -4,5 +4,6 @@ tensorflow
 opencv-contrib-python
 argparse
 yolov5
-pylint
+autopep8
 flake8
+pytest
