@@ -30,6 +30,7 @@ Project follows PEP8 style.
 
 Style tools - autopep8 (run directly or use PyCharm Tools > style > autopep8)
 Linters - flake8 (run directly or use PyCharm Tools > lint > flake8)
+Tests - pytest
 
 #### flake8 issues fix log:
 utils.py:
@@ -48,6 +49,10 @@ yolov5_tflite_webcam_inference.py:
 	F841 local variable 'no_of_frames' is assigned to but never used
 	(not an issue)
 	Other issues fixed.
+
+#### pytest
+pytest set as default test runner in PyCharm.
+
 
 
 
