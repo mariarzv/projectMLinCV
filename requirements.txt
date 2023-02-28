@@ -3,7 +3,6 @@ numpy
 tensorflow
 opencv-contrib-python
 argparse
-yolov5
 autopep8
 flake8
 pytest
