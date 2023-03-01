@@ -13,6 +13,9 @@ Tested on Windows 10, in PyCharm
 using yolov5
 
 Test image inference and video inference
+Intended result:
+![peoplebig](/peoplebigyolov5_output.jpg)
+
 
 ## Installation
 
