@@ -1,7 +1,10 @@
 import numpy as np
+import os
+import cv2
 import tensorflow as tf
 
-
+projdir = os.path.dirname(os.path.abspath(__file__))
+classnames = img = os.path.normpath(projdir + '/class_names.txt')
 class Yolov5Tflite:
 
     def __init__(self, weights='yolov5s-fp16.tflite', image_size=416,
@@ -12,7 +15,7 @@ class Yolov5Tflite:
         self.conf_thres = conf_thres
         self.iou_thres = iou_thres
 
-        with open('class_names.txt') as f:
+        with open(classnames) as f:
             self.names = [line.rstrip() for line in f]
 
     def xywh2xyxy(self, x):
@@ -105,7 +108,16 @@ class Yolov5Tflite:
 
         return result_boxes, result_scores, result_class_names
 
+    def imgresize(self, image):
+        height, width = image.shape[:2]
+        desired_width = 416
+        scale = desired_width / width
+        new_height = int(height * scale)
+        new_width = int(width * scale)
+        return cv2.resize(image, (new_width, new_height))
+
     def detect(self, image):
+        image = self.imgresize(image)
         original_size = image.shape[:2]
         input_data = np.ndarray(shape=(1, self.image_size, self.image_size, 3),
                                 dtype=np.float32)

@@ -30,7 +30,11 @@ Project follows PEP8 style.
 
 Style tools - autopep8 (run directly or use PyCharm Tools > style > autopep8)
 Linters - flake8 (run directly or use PyCharm Tools > lint > flake8)
+autopep8 and flake8 configs are in setup.cfg
 Tests - pytest
+
+All of these tools are added to requirements.txt >> will install in your venv with everything else.
+The tools are configured in PyCharm as external tools. 
 
 #### flake8 issues fix log:
 utils.py:
