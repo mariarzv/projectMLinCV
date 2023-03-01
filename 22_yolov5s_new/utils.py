@@ -1,4 +1,19 @@
 from PIL import Image
+import os
+import cv2
+
+
+def getprojdir():
+    return os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+
+def imgresize416(image):
+    height, width = image.shape[:2]
+    desired_width = 416
+    scale = desired_width / width
+    new_height = int(height * scale)
+    new_width = int(width * scale)
+    return cv2.resize(image, (new_width, new_height))
 
 
 def letterbox_image(image, size):

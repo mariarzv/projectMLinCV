@@ -1,13 +1,12 @@
 import pytest
 import os
-from yolov5_tflite_inference import Yolov5Tflite
-from yolov5_tflite_image_inference import detect_image
 import argparse
+from utils import getprojdir
+from yolov5_tflite_image_inference import detect_image
 
-projdir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-imgbig = os.path.normpath(projdir + '/peoplebig.png')
-imgsmall = os.path.normpath(projdir + '/peoplesmall.png')
 
+imgbig = os.path.normpath(getprojdir() + '/peoplebig.png')
+imgsmall = os.path.normpath(getprojdir() + '/peoplesmall.png')
 
 parser = argparse.ArgumentParser()
 parser.add_argument(
@@ -30,15 +29,17 @@ parser.add_argument(
 
 opt = parser.parse_known_args()
 
+
 @pytest.mark.bigimage
 def test_noerror_big():
     with pytest.raises(Exception):
         detect_image(
             opt.weights,
-            imgbig,
+            imgsmall,
             opt.img_size,
             opt.conf_thres,
             opt.iou_thres)
+
 
 @pytest.mark.smallimage
 def test_noerror_small():

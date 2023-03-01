@@ -72,6 +72,7 @@ def detect_image(weights, image_url, img_size, conf_thres, iou_thres):
 
         print('FPS:', 1 / (end_time - start_time))
         print('Total Time Taken:', end_time - start_time)
+    return img
 
 
 if __name__ == '__main__':
