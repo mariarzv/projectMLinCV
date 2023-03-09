@@ -5,8 +5,8 @@ from utils import getprojdir
 from yolov5_tflite_image_inference import detect_image
 
 
-imgbig = os.path.normpath(getprojdir() + '/peoplebig.png')
-imgsmall = os.path.normpath(getprojdir() + '/peoplesmall.png')
+imgbig = os.path.normpath(getprojdir() + '/images/peoplebig.png')
+imgsmall = os.path.normpath(getprojdir() + '/images/peoplesmall.png')
 
 parser = argparse.ArgumentParser()
 parser.add_argument(
