@@ -3,7 +3,6 @@ import os
 import cv2
 import numpy as np
 from utils import getprojdir
-from utils import imgresize416
 from yolov5_tflite_image_inference import detect_image
 
 img = os.path.normpath(getprojdir() + '/images/peoplebig.png')

@@ -5,7 +5,7 @@ import tensorflow as tf
 from utils import getprojdir
 from utils import imgresize416
 
-classnames = img = os.path.normpath(getprojdir() + '/22_yolov5s_new/class_names.txt')
+classnames = img = os.path.normpath(getprojdir() + '/class_names.txt')
 
 
 class Yolov5Tflite:

@@ -4,7 +4,7 @@ import cv2
 
 
 def getprojdir():
-    return os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    return os.path.dirname(os.path.abspath(__file__))
 
 
 def imgresize416(image):

@@ -1,8 +1,9 @@
 pillow
 numpy
-tensorflow
 opencv-contrib-python
 argparse
 autopep8
 flake8
 pytest
+tensorflow
+streamlit

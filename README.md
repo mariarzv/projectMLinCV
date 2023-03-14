@@ -60,6 +60,19 @@ yolov5_tflite_webcam_inference.py:
 #### pytest
 pytest set as default test runner in PyCharm.
 
+### Docker 
+Get Docker image from Docker hub:
+```bash
+docker pull mariarazv/mlincv
+```
+Docker image is created to run streamlit app automatically when container is run.
+It is set to expose port 8501 for access to streamlit app.
+Use this command to run the image "rmv_yolov5":
+```bash
+docker run -p 8501:8501 rmv_yolov5
+```
+Then access streamlit app on localhost port 8501.
+
 
 
 
