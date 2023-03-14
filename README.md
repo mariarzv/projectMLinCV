@@ -65,6 +65,7 @@ Get Docker image from Docker hub:
 ```bash
 docker pull mariarazv/mlincv
 ```
+(Or download from [rmv_yolov5](https://hub.docker.com/r/mariarazv/mlincv) )
 Docker image is created to run streamlit app automatically when container is run.
 It is set to expose port 8501 for access to streamlit app.
 Use this command to run the image "rmv_yolov5":
