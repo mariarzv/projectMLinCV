@@ -1,8 +1,11 @@
 import pytest
 import os
 import argparse
-from utils import getprojdir
 from yolov5_tflite_image_inference import detect_image
+
+
+def getprojdir():
+    return os.path.dirname(os.path.abspath(__file__))
 
 
 imgbig = os.path.normpath(getprojdir() + '/images/peoplebig.png')

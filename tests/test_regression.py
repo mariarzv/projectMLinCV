@@ -2,8 +2,12 @@ import pytest
 import os
 import cv2
 import numpy as np
-from utils import getprojdir
 from yolov5_tflite_image_inference import detect_image
+
+
+def getprojdir():
+    return os.path.dirname(os.path.abspath(__file__))
+
 
 img = os.path.normpath(getprojdir() + '/images/peoplebig.png')
 
