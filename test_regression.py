@@ -3,13 +3,11 @@ import os
 import cv2
 import numpy as np
 from yolov5_tflite_image_inference import detect_image
-
-
-def getprojdir():
-    return os.path.dirname(os.path.abspath(__file__))
+from utils import getprojdir
 
 
 img = os.path.normpath(getprojdir() + '/images/peoplebig.png')
+weights = os.path.normpath(getprojdir() + '/weights/yolov5s-fp16.tflite')
 
 
 def mse(image1, image2):
@@ -23,7 +21,7 @@ def mse(image1, image2):
 def test_image_regression():
     image1 = cv2.imread(img)
     # image1 = imgresize416(image)
-    image2 = detect_image('yolov5s-fp16.tflite',
+    image2 = detect_image(weights,
                           img,
                           416,
                           0.25,

@@ -2,21 +2,19 @@ import pytest
 import os
 import argparse
 from yolov5_tflite_image_inference import detect_image
-
-
-def getprojdir():
-    return os.path.dirname(os.path.abspath(__file__))
+from utils import getprojdir
 
 
 imgbig = os.path.normpath(getprojdir() + '/images/peoplebig.png')
 imgsmall = os.path.normpath(getprojdir() + '/images/peoplesmall.png')
+weights = os.path.normpath(getprojdir() + '/weights/yolov5s-fp16.tflite')
 
 parser = argparse.ArgumentParser()
 parser.add_argument(
     '-w',
     '--weights',
     type=str,
-    default='yolov5s-fp16.tflite',
+    default=weights,
     help='model.pt path(s)')
 parser.add_argument('--img_size', type=int, default=416, help='image size')
 parser.add_argument(
