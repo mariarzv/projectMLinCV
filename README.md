@@ -14,7 +14,7 @@ using yolov5
 
 Test image inference and video inference
 Intended result:
-![peoplebig](/peoplebigyolov5_output.jpg)
+![peoplebig](images/peoplebigyolov5_output.jpg)
 
 
 ## Installation
@@ -61,7 +61,7 @@ yolov5_tflite_webcam_inference.py:
 pytest set as default test runner in PyCharm.
 
 ### Docker 
-![ Alt text](streamlit.gif)
+![dockertest](streamlit.gif)
 Get Docker image from Docker hub:
 ```bash
 docker pull mariarazv/mlincv
