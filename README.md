@@ -61,6 +61,7 @@ yolov5_tflite_webcam_inference.py:
 pytest set as default test runner in PyCharm.
 
 ### Docker 
+![ Alt text](streamlit.gif)
 Get Docker image from Docker hub:
 ```bash
 docker pull mariarazv/mlincv
