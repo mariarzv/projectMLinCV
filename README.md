@@ -32,6 +32,8 @@ Project follows PEP8 style.
 ### Additionally in venv/Scripts:
 
 Style tools - autopep8 (run directly or use PyCharm Tools > style > autopep8)
+autopep8 config is in setup.cfg file
+
 Linters - flake8 (run directly or use PyCharm Tools > lint > flake8)
 autopep8 and flake8 configs are in setup.cfg
 Tests - pytest
