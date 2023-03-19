@@ -32,10 +32,10 @@ Project follows PEP8 style.
 ### Additionally in venv/Scripts:
 
 Style tools - autopep8 (run directly or use PyCharm Tools > style > autopep8)
-autopep8 config is in setup.cfg file
 
 Linters - flake8 (run directly or use PyCharm Tools > lint > flake8)
-autopep8 and flake8 configs are in setup.cfg
+autopep8 and flake8 configs are in setup.cfg 
+(autopep8 config is called pycodestyle, flake8 config is called flake8)
 Tests - pytest
 
 All of these tools are added to requirements.txt >> will install in your venv with everything else.
