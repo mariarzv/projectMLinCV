@@ -30,10 +30,12 @@ jobs:
       run: |
         autopep8 --in-place --recursive --ignore=F841,F401,W504 .
         flake8 --exclude=.git,__pycache__,venv --max-line-length=88 .
-        
+
     - name: Upload artifacts
       uses: actions/upload-artifact@v2
       with:
         name: build
         path: |
           dist
+      run: |
+        ls -R dist
