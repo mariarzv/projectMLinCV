@@ -54,14 +54,8 @@ def detect_image(weights, image_url, img_size, conf_thres, iou_thres):
                     r[1])), (int(
                         r[2]), int(
                         r[3])), (255, 0, 0), 1)
-            cv2.putText(img,
-                        str(int(100 * result_scores[i])) + '%  ' + str(result_class_names[i]),
-                        org,
-                        font,
-                        fontScale,
-                        color,
-                        thickness,
-                        cv2.LINE_AA)
+            cv2.putText(img, str(int(100 * result_scores[i])) + '%  ' + str(result_class_names[i]),
+                        org, font, fontScale, color, thickness, cv2.LINE_AA)
 
         save_result_filepath = image_url.split(
             '/')[-1].split('.')[0] + 'yolov5_output.jpg'
