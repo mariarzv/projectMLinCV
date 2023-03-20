@@ -29,7 +29,7 @@ To install the project, follow these steps:
 Project is configured in PyCharm  2022.3.2 (Community Edition)
 Project follows PEP8 style.
 
-### Additionally in venv/Scripts:
+### Additionally about linters and style tools:
 
 Style tools - autopep8 (run directly or use PyCharm Tools > style > autopep8)
 
@@ -61,6 +61,10 @@ yolov5_tflite_webcam_inference.py:
 
 #### pytest
 pytest set as default test runner in PyCharm.
+
+### CI 
+PR/MR check implemented:
+![prcheck](prcheck.png)
 
 ### Docker 
 ![dockertest](streamlit.gif)
