@@ -38,7 +38,7 @@ def main():
 
     with left_column:
         # render the readme as markdown using st.markdown.
-        readme_text = st.markdown(rmcontent)
+        st.markdown(rmcontent)
 
     with right_column:
         st.title("Load your .jpg image for processing:")

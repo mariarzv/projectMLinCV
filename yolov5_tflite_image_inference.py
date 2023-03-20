@@ -2,7 +2,7 @@ from yolov5_tflite_inference import Yolov5Tflite
 import argparse
 import cv2
 import time
-from PIL import Image, ImageOps
+from PIL import Image
 import numpy as np
 from utils import letterbox_image, scale_coords
 
@@ -55,8 +55,8 @@ def detect_image(weights, image_url, img_size, conf_thres, iou_thres):
                         r[2]), int(
                         r[3])), (255, 0, 0), 1)
             cv2.putText(img,
-                        str(int(100 * result_scores[i])) + '%  ' +
-                        str(result_class_names[i]),
+                        str(int(100 * result_scores[i])) + '%  '
+                        + str(result_class_names[i]),
                         org,
                         font,
                         fontScale,

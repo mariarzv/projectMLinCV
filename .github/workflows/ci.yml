@@ -23,3 +23,5 @@ jobs:
         pip install -r requirements.txt
         pytest test_image.py test_regression.py
 
+# prevent merging failed CI jobs:
+if: ${{ success() }}

@@ -26,7 +26,7 @@ def detect_video(weights, webcam, img_size, conf_thres, iou_thres):
     yolov5_tflite_obj = Yolov5Tflite(weights, img_size, conf_thres, iou_thres)
 
     size = (img_size, img_size)
-    no_of_frames = 0
+
     try:
         while True:
 
@@ -71,8 +71,8 @@ def detect_video(weights, webcam, img_size, conf_thres, iou_thres):
                             r[1])), (int(
                                 r[2]), int(
                                 r[3])), (255, 0, 0), 1)
-                    cv2.putText(frame, str(int(100 * result_scores[i])) +
-                                '%  ' + str(result_class_names[i]), org, font,
+                    cv2.putText(frame, str(int(100 * result_scores[i]))
+                                + '%  ' + str(result_class_names[i]), org, font,
                                 fontScale, color, thickness, cv2.LINE_AA)
 
             out.write(frame)
