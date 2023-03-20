@@ -28,5 +28,5 @@ jobs:
 
     - name: Lint code
       run: |
-        autopep8 --in-place --recursive .
+        autopep8 --in-place --recursive --ignore=F841,F401 .
         flake8 --exclude=.git,__pycache__,venv --max-line-length=88 .
