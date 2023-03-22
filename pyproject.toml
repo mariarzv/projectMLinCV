@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "projectmlincv"
+version = "0.1.0"
+description = ""
+authors = ["mariarzv <maria.razzv@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+Pillow = "^9.4.0"
+numpy = "^1.24.2"
+tensorflow = "^2.11.1"
+opencv-contrib-python = "^4.7.0.72"
+argparse = "^1.4.0"
+yolov5 = "^7.0.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

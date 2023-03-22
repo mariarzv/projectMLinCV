@@ -14,12 +14,22 @@ using yolov5
 
 Test image inference and video inference
 
+## Prerequisites
+
+ - Needs Python to run, tested with Python 3.9
+ - Needs pip to run pip install commands, to check if you have pip run `py -m pip --version`
+ - If you installed Python from source, with an installer from python.org, or via Homebrew you should already have pip. If you’re on Linux and installed using your OS package manager, you may have to install pip separately, see [installing pip/setuptools/wheel with Linux Package Managers](https://packaging.python.org/en/latest/guides/installing-using-linux-tools/)
+ - Needs poetry installed in order to manage environments, on Windows installation is: `(Invoke-WebRequest -Uri https://install.python-poetry.org -UseBasicParsing).Content | py -` or other versions of this command for your operating system.  
+ - You can check if you have poetry installed: `poetry --version`
+
 ## Installation
 
 To install the project, follow these steps:
 
 1. Install the required dependencies by running `pip install -r requirements.txt` in the terminal.
-2. Run `cd dist` and `pip install projectMLinCV-0.0.1-py2.py3-none-any.whl` to install the project using the wheel file.
+2. Run `cd dist` and `pip install projectMLinCV-0.0.1-py2.py3-none-any.whl` to install the project using the wheel file. If project is already installed with the same version as the provided wheel you can use --force-reinstall to force an installation of the wheel.
+
+
 
 
 
