@@ -1,0 +1,7 @@
+pillow
+numpy
+tensorflow
+opencv-contrib-python
+argparse
+yolov5
+poetry-core

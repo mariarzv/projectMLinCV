@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "projectmlincv"
+name = "projectMLinCV"
 version = "0.1.0"
 description = ""
 authors = ["mariarzv <maria.razzv@gmail.com>"]
@@ -15,6 +15,8 @@ opencv-contrib-python = "^4.7.0.72"
 argparse = "^1.4.0"
 yolov5 = "^7.0.11"
 
+[tool.poetry.scripts]
+demo = "python demo.py"
 
 [build-system]
 requires = ["poetry-core"]
