@@ -31,7 +31,7 @@ To install the project, follow these steps:
 3. To install the project directly from repository use `pip install git+https://github.com/mariarzv/projectMLinCV.git@assignment1`
 OR
 4. Install the required dependencies by running `pip install -r requirements.txt` in the terminal.
-5. Run `cd dist` and `pip install projectMLinCV-0.0.1-py2.py3-none-any.whl` to install the project using the wheel file. If project is already installed with the same version as the provided wheel you can use --force-reinstall to force an installation of the wheel.
+5. Run `cd dist` and `pip install projectmlincv-0.1.0-py3-none-any.whl` to install the project using the wheel file. If project is already installed with the same version as the provided wheel you can use --force-reinstall to force an installation of the wheel.
 
 ## Running
 
