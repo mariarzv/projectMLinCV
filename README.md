@@ -28,7 +28,7 @@ To install the project, follow these steps:
 
 1. Navigate to your folder and create poetry virtual environment `poetry env use python 3.9` or other Python version you have, to check your version run `python --version`
 2. Make sure you have poetry-core installed: `pip install poetry-core`
-3. To install the project directly from repository use `pip install git+https://github.com/mariarzv/projectMLinCV.git@assignment1`
+3. To install the project directly from repository use `pip install git+https://github.com/mariarzv/projectMLinCV.git@assignment1`  or if that doesn't work you can clone or download the repository and install the package directly from dist folder
 OR
 4. Install the required dependencies by running `pip install -r requirements.txt` in the terminal.
 5. Run `cd dist` and `pip install projectmlincv-0.1.0-py3-none-any.whl` to install the project using the wheel file. If project is already installed with the same version as the provided wheel you can use --force-reinstall to force an installation of the wheel.
