@@ -2,8 +2,10 @@ pillow
 numpy
 opencv-contrib-python
 argparse
+poetry-core
 autopep8
 flake8
 pytest
 tensorflow
 streamlit
+

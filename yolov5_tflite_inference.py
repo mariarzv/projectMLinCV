@@ -5,11 +5,12 @@ from utils import getprojdir
 from utils import imgresize416
 
 classnames = img = os.path.normpath(getprojdir() + '/class_names.txt')
-
+weightstf = os.path.normpath(getprojdir() + '/yolov5s-fp16.tflite')
+print(weightstf)
 
 class Yolov5Tflite:
 
-    def __init__(self, weights='yolov5s-fp16.tflite', image_size=416,
+    def __init__(self, weights=weightstf, image_size=416,
                  conf_thres=0.25, iou_thres=0.45):
 
         self.weights = weights

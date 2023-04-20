@@ -11,7 +11,7 @@ for filename in filenames:
         readme = filename
 
 # file paths setup for weights and images
-weights = os.path.normpath(getprojdir() + '/tests/yolov5s-fp16.tflite')
+weights = os.path.normpath(getprojdir() + '/weights/yolov5s-fp16.tflite')
 tempimg = os.path.normpath(getprojdir() + '/temp/temp.jpg')
 detectedimg = os.path.normpath(getprojdir() + '/temp/tempyolov5_output.jpg')
 
