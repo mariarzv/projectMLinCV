@@ -9,6 +9,7 @@ COPY . /projectMLinCV
 
 # Install any needed packages specified in requirements.txt
 RUN pip install --trusted-host pypi.python.org -r requirements.txt
+RUN apt-get update && apt-get install ffmpeg libsm6 libxext6  -y
 
 # Expose the port that the app will run on
 EXPOSE 8501
